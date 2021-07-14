@@ -127,7 +127,7 @@ func (n *Node) Remove(key int) *Node {
 		if maxLeftNode.left == nil {
 			break
 		}
-		maxLeftNode = n.right.left
+		maxLeftNode = maxLeftNode.left
 	}
 
 	maxLeftNode.left = n.left
